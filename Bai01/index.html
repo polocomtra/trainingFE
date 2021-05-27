@@ -19,30 +19,38 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-light bg-white header mainHeader">
+      <nav class="navbar navbar-light bg-white header mainHeader-1">
         <div class="container-fluid">
-          <div class="row flex-row-1">
-            <div class="col-12 col-sm-8 col-md-8 headerFlex">
+          <div class="row flex-grow-1 undefined">
+            <div class="col-12 col-sm-8 col-md-8 header-col-1 header-nav-1">
               <div class="col-1"></div>
-              <div class="col-2 headerItem headerLogo">
-                <a href="/" class="navbar-brand meeteLogo">
-                  <img
+              <div class="header-navItem-1 header-logoWrapper-1 col-2">
+                <a class="navbar-brand header-logo-1" href="/"
+                  ><img
                     src="https://meete.co/img/meete_logo.svg"
                     alt="Meete logo"
-                  />
-                </a>
+                /></a>
               </div>
-              <div class="col-3 headerItem dropDown">
-                <span>
-                  <span class="nav-link headerTextWrap">Hồ Chí Minh</span>
-                </span>
+              <div class="header-navItem-1 dropdown col-3">
+                <span class=""
+                  ><span
+                    class="nav-link header-textWrap-1"
+                    data-toggle="dropdown"
+                    >Hồ Chí Minh</span
+                  ></span
+                >
               </div>
-              <div class="col-6 headerItem">
-                <div class="searchBar-wrap d-flex align-items-center">
+              <div
+                class="header-navItem-1 DesktopHeader_searchBar__l2AXC col-6"
+              >
+                <div class="searchBar_wrap d-flex align-items-center">
                   <input
+                    class="form-control mr-sm-2 searchBar_input"
                     type="search"
-                    class="form-control mr-sm-2 searchBar-input"
-                    placeholder="Khuyến mãi, địa điểm, thương hiệu"
+                    data-action="search"
+                    placeholder="Khuyến mãi, thương hiệu, địa điểm"
+                    aria-label="Search"
+                    value=""
                   />
                   <div class="d-flex searchBar-icon">
                     <i class="fa fa-search" aria-hidden="true"></i>
@@ -50,26 +58,36 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-4 col-md-4 headerFlex alignToRight">
+            <div class="col-12 col-sm-4 col-md-4 header-col-1">
               <ul
-                class="nav nav-pilss nav-justified col-12 justify-content-end"
+                class="
+                  nav nav-pills nav-justified
+                  col-12
+                  justify-content-end
+                  header-nav-1
+                "
               >
-                <li class="col-4 navItem">
-                  <div class="icon-group">
-                    <a href="/gio-hang" class="icon-wrap">
-                      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    </a>
-                    <a href="/thong-bao" class="icon-wrap">
-                      <i class="fa fa-bell" aria-hidden="true"></i>
-                    </a>
+                <li class="header-navItem-1 col-4" style="position: relative">
+                  <div class="header-iconGroup-1">
+                    <a class="header-iconWrap-1" href="/gio-hang"
+                      ><img
+                        class="header-icon-1"
+                        src="https://meete.co/img/icons/icon_cart.svg"
+                        alt="Giỏ hàng" /></a
+                    ><a class="header-iconWrap-1" href="/thong-bao"
+                      ><img
+                        class="header-icon-1"
+                        src="https://meete.co/img/icons/icon_notification.svg"
+                        alt="Thông báo"
+                    /></a>
                   </div>
                 </li>
-                <li class="dropdown navItem">
-                  <span>
-                    <span class="nav-link headerTextWrap">
-                      Nguyễn Tiến Tài
-                    </span>
-                  </span>
+                <li class="dropdown header-navItem-1 col-5">
+                  <span class=""
+                    ><span class="nav-link header-textWrap-1"
+                      >Nguyễn Tiến Tài</span
+                    ></span
+                  >
                 </li>
                 <li class="col-1"></li>
               </ul>
