@@ -30,7 +30,7 @@ for (let i = 0; i < data.length; i++) {
   let hyperLinkTag = document.createElement("a");
   hyperLinkTag.href = "/";
   hyperLinkTag.classList.add("w-100");
-  hyperLinkTag.style="text-decoration:none !important";
+  hyperLinkTag.style = "text-decoration:none !important";
   hyperLinkTag.innerHTML = `<div class="bg-white rounded my-2 style-container">
     <div class="style-top-info">
         <img src="${
@@ -49,7 +49,7 @@ for (let i = 0; i < data.length; i++) {
         "Ngày đặt hàng"
         "26/05/2021 - 16:00"
     </div>
-    <div class="${
+    <div id="available-status" class="${
       data[i].status
         ? "style-success style-status-success"
         : "style-status style-statusPending"
@@ -59,3 +59,25 @@ for (let i = 0; i < data.length; i++) {
 </div>`;
   cartView.appendChild(hyperLinkTag);
 }
+
+let divToggle = document.getElementById("toToggle");
+let paperForToggle = document.getElementById("forToggle");
+let locationValue = document.getElementById("locationValue");
+let locationHN = document.getElementById("location-HaNoi");
+let locationHCM = document.getElementById("location-HCM");
+divToggle.addEventListener("click", () => {
+  if ((paperForToggle.style.display = "none")) {
+    paperForToggle.style.display = "block";
+  } else if ((paperForToggle.style.display = "block")) {
+    paperForToggle.style.display = "none";
+  }
+});
+locationHN.addEventListener("click", () => {
+  locationValue.textContent = locationHN.textContent;
+  paperForToggle.style.display = "none";
+});
+
+locationHCM.addEventListener("click", () => {
+  locationValue.textContent = locationHCM.textContent;
+  paperForToggle.style.display = "none";
+});
