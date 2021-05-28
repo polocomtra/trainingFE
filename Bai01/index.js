@@ -30,6 +30,7 @@ for (let i = 0; i < data.length; i++) {
   let hyperLinkTag = document.createElement("a");
   hyperLinkTag.href = "/";
   hyperLinkTag.classList.add("w-100");
+  hyperLinkTag.style="text-decoration:none !important";
   hyperLinkTag.innerHTML = `<div class="bg-white rounded my-2 style-container">
     <div class="style-top-info">
         <img src="${

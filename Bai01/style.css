@@ -370,3 +370,7 @@ main {
   position: absolute;
   left: 15px;
 }
+
+.none-underline{
+  text-decoration: none;
+}

@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import LoginModal from "../Modal/LoginModal";
 
 const Profile = () => {
+    const [showModal,setShowModal]=useState(false)
   return (
+    
     <div className="col-12 col-sm-4 col-md-4 header-col-1">
       <ul
         className="
@@ -31,11 +34,15 @@ const Profile = () => {
         </li>
         <li className="dropdown header-navItem-1 col-5">
           <span className>
-            <span className="nav-link header-textWrap-1">Nguyễn Tiến Tài</span>
+            <span className="nav-link header-textWrap-1" onClick={()=>setShowModal(!showModal)}>Đăng nhập</span>
           </span>
         </li>
+        {
+        showModal && <LoginModal showModal={showModal}  />
+        }
         <li className="col-1" />
       </ul>
+      
     </div>
   );
 };

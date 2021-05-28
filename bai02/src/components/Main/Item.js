@@ -3,7 +3,7 @@ import React from "react";
 const Item = ({ item }) => {
   const { img, voucher, place, status } = item;
   return (
-    <a href="/" className="w-100">
+    <a href="/" className="w-100" style={{textDecoration:'none'}}>
       <div className="bg-white rounded my-2 style-container">
         <div className="style-top-info">
           <img
